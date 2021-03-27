@@ -1,0 +1,16 @@
+.vertical-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  align-items: center;
+}
+hr {
+  width: 20px;
+  border-top: 0.02px inset var(--grey);
+}
+.icon {
+  color: var(--grey);
+  transform: scale(1.5);
+  margin: 10px;
+}

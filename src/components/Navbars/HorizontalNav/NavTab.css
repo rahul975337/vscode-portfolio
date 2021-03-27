@@ -1,0 +1,25 @@
+.tab {
+  display: flex;
+  justify-content: space-between;
+  height: 35px;
+  align-items: center;
+  width: 120px;
+  background-color: var(--dark-background);
+  font-size: 12px;
+  font-weight: normal;
+  padding: 3px;
+  border-right: 0.02px inset var(--mid-background);
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+}
+
+.tab_name {
+  text-decoration: none;
+  color: var(--white-text);
+  width: 100px;
+}
+.close_link {
+  color: var(--white-text);
+  transform: scale(0.7);
+}
