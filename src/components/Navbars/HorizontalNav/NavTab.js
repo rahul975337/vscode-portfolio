@@ -1,17 +1,19 @@
 import { Close } from "@material-ui/icons";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./NavTab.css";
-function NavTab() {
+import { FaJsSquare } from "react-icons/fa";
+function NavTab({ routeUrl, tab_name }) {
   return (
-    <div className="tab">
-      <Link to="/education" className="tab_name">
-        Skills.js
-      </Link>
-      <Link to="/" className="close_link">
+    // <div className="tab">
+    <NavLink exact to={routeUrl} className="tab" activeClassName="tab-active">
+      <FaJsSquare className="logo" />
+      <p className="tab_name">{tab_name}</p>
+      <NavLink exact to="/" className="close_link">
         <Close className="close-icon" />
-      </Link>
-    </div>
+      </NavLink>
+    </NavLink>
+    // </div>
   );
 }
 

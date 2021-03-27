@@ -6,20 +6,36 @@ body {
 
 .top_panel {
   height: 25px;
-  background-color: var(--mid-background);
+  display: flex;
+  background-color: var(--dark-background);
   color: var(--white-text);
-  text-align: center;
+  align-items: center;
 }
+
+.vslogo {
+  transform: scale(0.4);
+}
+
+.top_options {
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.top_heading {
+  font-size: 13px;
+  margin-left: 10rem;
+}
+
 .mid_panel {
   display: flex;
+
   position: absolute;
-  top: 25px;
+  top: 26px;
   bottom: 20px;
 }
 
 .left_panel {
   width: 45px;
-
   position: absolute;
   top: 25px;
   bottom: 0;
@@ -28,7 +44,9 @@ body {
 
 .right_panel {
   position: absolute;
+  border-left: 1px ridge rgba(0, 0, 0, 0.884);
   left: 45px;
+  background-color: var(--mid-background);
   right: 0;
   top: 25px;
   bottom: 0;
@@ -47,24 +65,31 @@ body {
   right: 0;
   top: 35px;
   bottom: 0;
-  /* overflow-y: scroll;
-  overflow-x: hidden; */
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transition: ease-in 0.3s;
 
-  background-color: var(--mid-background);
+  /* background-color: var(--mid-background); */
 }
 
 .footer {
   height: 20px;
   position: absolute;
   display: flex;
+  border-top: 1px ridge rgba(0, 0, 0, 0.884);
+
   align-items: center;
   justify-content: space-between;
+
   bottom: 0;
   left: 0;
   right: 0;
   background-color: var(--dark-background);
 }
 
+.master_link {
+  cursor: pointer;
+}
 .icon-branch {
   color: var(--white-text);
   font-size: 13px;

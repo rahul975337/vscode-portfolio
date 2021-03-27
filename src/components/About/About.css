@@ -1,0 +1,12 @@
+.about-me {
+  font-size: 22px;
+  letter-spacing: 1px;
+
+  width: 70vw;
+  margin: auto;
+  color: var(--text-grey);
+}
+
+.about-me > li {
+  font-size: 18px;
+}

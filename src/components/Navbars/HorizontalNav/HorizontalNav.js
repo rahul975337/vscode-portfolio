@@ -5,14 +5,14 @@ import { Close } from "@material-ui/icons";
 import NavTab from "./NavTab";
 function HorizontalNav() {
   return (
-    <div>
-      <nav className="hell">
-        <NavTab />
-        <NavTab />
-        <NavTab />
-        <NavTab />
-      </nav>
-    </div>
+    <nav className="hell">
+      <NavTab tab_name="home.js" routeUrl="/" />
+      <NavTab tab_name="projects.css" routeUrl="/projects" />
+      <NavTab tab_name="skills.sql" routeUrl="/skills" />
+      <NavTab tab_name="experience.sql" routeUrl="/experience" />
+
+      <NavTab tab_name="about.md" routeUrl="/about" />
+    </nav>
   );
 }
 
