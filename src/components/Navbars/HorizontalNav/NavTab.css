@@ -31,13 +31,25 @@
   margin-left: 10px;
 }
 
-
 .logo {
-  color: rgb(255, 202, 40);
   transform: scale(1.4);
   margin-left: 7px;
 }
-
+.js {
+  color: rgb(255, 202, 40);
+}
+.css {
+  color: #006699;
+}
+.html {
+  color: #f06529;
+}
+.dart {
+  color: #0075ba;
+}
+.sass {
+  color: #cd6799;
+}
 .tab_name {
   margin-left: 8px;
   font-size: 12px;

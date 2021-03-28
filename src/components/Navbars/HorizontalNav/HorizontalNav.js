@@ -4,16 +4,16 @@ import {
   VscGitCompare,
   VscSplitHorizontal,
 } from "react-icons/vsc";
+import tabData from "./../../../Data/tabData";
 import "./HorizontalNav.css";
 import NavTab from "./NavTab";
-import tabData from "./../../../Data/tabData";
 
 function HorizontalNav() {
   return (
     <nav className="hell">
       {tabData.map((tab) => {
-        const { tab_name, routeUrl } = tab;
-        return <NavTab tab_name={tab_name} routeUrl={routeUrl} />;
+        const { tab_name, routeUrl, logo } = tab;
+        return <NavTab logo={logo} tab_name={tab_name} routeUrl={routeUrl} />;
       })}
 
       <VscGitCompare className="compare-icon" />

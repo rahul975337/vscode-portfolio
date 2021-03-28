@@ -1,17 +1,11 @@
 import { ClickAwayListener, makeStyles, Portal } from "@material-ui/core";
 import React from "react";
 import { IoPersonCircleOutline } from "react-icons/io5";
-import { SiGithub, SiGmail, SiInstagram, SiLinkedin } from "react-icons/si";
-import {
-  VscCode,
-  VscExtensions,
-  VscHome,
-  VscSettingsGear,
-} from "react-icons/vsc";
+import { VscCode, VscHome, VscSettingsGear } from "react-icons/vsc";
 import { NavLink } from "react-router-dom";
 import ReactTooltip from "react-tooltip";
+import { linkIcons } from "./../../../Data/verticalNavData";
 import "./VerticalNav.css";
-
 const useStyles = makeStyles((theme) => ({
   dropdown: {
     position: "fixed",
@@ -68,64 +62,24 @@ function VerticalNav() {
 
       <hr />
 
-      <a
-        activeClassName="icon--active"
-        href="https://portfolio-projects-rt.netlify.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="navbar_logo"
-        data-tip="Projects"
-        data-for="projects"
-      >
-        <VscExtensions className="icon" />
-        <ReactTooltip id="projects" />
-      </a>
-      <a
-        activeClassName="icon--active"
-        href="mailto:tilwani@gmail.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="navbar_logo"
-        data-tip="Mail me"
-        data-for="mail"
-      >
-        <SiGmail className="icon" /> <ReactTooltip id="mail" />
-      </a>
-      <a
-        activeClassName="icon--active"
-        href="https://www.linkedin.com/in/rahul-tilwani-965291194/"
-        target="_blank"
-        rel="noreferrer"
-        className="navbar_logo"
-        data-tip="Reach me on LinkedIn"
-        data-for="linkedin"
-      >
-        <SiLinkedin className="icon" />
-        <ReactTooltip id="linkedin" />
-      </a>
-      <a
-        activeClassName="icon--active"
-        href="https://github.com/rahul975337"
-        target="_blank"
-        rel="noreferrer"
-        className="navbar_logo"
-        data-tip="Visit my Github"
-        data-for="github"
-      >
-        <SiGithub className="icon" />
-        <ReactTooltip id="github" />
-      </a>
-      <a
-        activeClassName="icon--active"
-        href="https://www.instagram.com/rahul_tilwani_12/"
-        target="_blank"
-        rel="noreferrer"
-        className="navbar_logo"
-        data-tip="Reach me on Instagram"
-        data-for="instagram"
-      >
-        <SiInstagram className="icon" /> <ReactTooltip id="instagram" />
-      </a>
+      {linkIcons.map((linkIcon) => {
+        const { url, dataTip, dataFor, icon } = linkIcon;
+        return (
+          <a
+            activeClassName="icon--active"
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="navbar_logo"
+            data-tip={dataTip}
+            data-for={dataFor}
+          >
+            {icon}
+            <ReactTooltip id={dataFor} />
+          </a>
+        );
+      })}
+
       <NavLink
         exact
         activeClassName="icon--active "
@@ -135,7 +89,7 @@ function VerticalNav() {
         data-for="about-me"
       >
         <IoPersonCircleOutline className="icon" />
-        <ReactTooltip id="about-me" place="top" />
+        <ReactTooltip id="about-me" />
       </NavLink>
 
       <div
