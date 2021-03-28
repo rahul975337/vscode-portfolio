@@ -1,8 +1,7 @@
 .vertical-nav {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-
+  height: 100vh;
   align-items: center;
 }
 hr {
@@ -10,31 +9,26 @@ hr {
   border-top: 0.02px inset var(--mid-background);
 }
 .icon {
-  color: var(--grey);
   transform: scale(1.35);
   margin: 10px;
   transition: ease-in 0.4s;
 }
 
-.icon--active {
-  border-left: 0.1px solid orangered;
-  color: white;
-}
 .about--icon {
   position: absolute;
-  z-index: 99;
   bottom: 80px;
-  transform: scale(1.3);
 }
 
 .settings--icon {
   position: absolute;
-  z-index: 99;
   bottom: 30px;
   cursor: pointer;
   transition: ease-out 0.5s;
-  color: var(--grey);
-  transform: scale(1.35);
+}
+.setting-heading {
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 10px;
 }
 
 .themes {
@@ -49,8 +43,8 @@ hr {
   align-items: center;
   margin: 8px;
 }
+
 .theme_circle {
-  background-color: blue;
   border-radius: 50%;
   display: inline-block;
   height: 35px;
@@ -66,9 +60,4 @@ hr {
 
 .theme_circle:hover {
   transform: scale(1.3);
-}
-
-.setting-heading {
-  font-size: 17px;
-  margin-left: 10px;
 }

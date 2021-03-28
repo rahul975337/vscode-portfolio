@@ -16,15 +16,11 @@
   border-radius: 50%;
 }
 
-
 .button {
-  background-color: var(--dark-background);
   border: none;
   color: var(--white-text);
   padding: 2px 8px;
   text-align: center;
-
-  text-decoration: none;
   font-size: 10px;
   display: flex;
   justify-content: space-around;
@@ -35,9 +31,7 @@
   cursor: pointer;
   border-radius: 5px;
 }
-.button:hover {
-  background-color: var(--light-background);
-}
+
 .button p {
   margin-left: 5px;
 }

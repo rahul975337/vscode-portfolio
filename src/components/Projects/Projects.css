@@ -3,21 +3,18 @@
 .projects {
   padding: 20px;
   font-family: "Ubuntu Mono", monospace;
-  color: var(--text-grey);
 }
-
 a {
   text-decoration: none;
-  color: var(--text-grey);
 }
 li {
   list-style: square;
 }
 
 .heading {
-  color: rgb(66, 165, 245);
   font-weight: bold;
   letter-spacing: 1px;
+  font-family: "Ubuntu Mono", monospace;
   font-size: 22px;
   cursor: pointer;
 }
@@ -27,7 +24,6 @@ li {
   display: inline-block;
   list-style: square;
   cursor: pointer;
-
   margin: 10px;
 }
 

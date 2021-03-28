@@ -1,9 +1,9 @@
 .about-me {
-  font-size: 22px;
+  font-size: 18px;
   letter-spacing: 1px;
   width: 70vw;
-  margin: auto;
-  color: var(--text-grey);
+  font-family: "Ubuntu Mono", monospace;
+  margin: 30px;
 }
 
 .about-me > li {

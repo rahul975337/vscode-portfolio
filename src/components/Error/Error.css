@@ -1,11 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 .error {
   display: flex;
   align-items: center;
+  font-family: "VT323", monospace;
 }
 
 .error-img {
   height: 70vh;
   margin-left: 30%;
+  animation-name: floating;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .error-text {
@@ -14,5 +20,17 @@
   font-weight: bold;
   letter-spacing: 2px;
   margin-top: -10px;
-  font-size: 20px;
+  font-size: 26px;
+  font-family: "VT323", monospace;
+}
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }

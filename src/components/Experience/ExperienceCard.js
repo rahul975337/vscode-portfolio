@@ -1,7 +1,13 @@
-import React from "react";
-import "./ExperienceCard.css";
+import React, { useContext } from "react";
+import ThemeContext from "../../ThemeContext";
+import AppTheme from "../../Themes";
 import experienceData from "./../../Data/experienceData";
+import "./ExperienceCard.css";
+
 function ExperienceCard() {
+  const theme = useContext(ThemeContext)[0];
+  const currentTheme = AppTheme[theme];
+
   return (
     <>
       {experienceData.map((experience) => {
@@ -13,23 +19,28 @@ function ExperienceCard() {
           description,
         } = experience;
         return (
-          <div className="exp-card">
-            <p className="heading">{companyName}</p>
+          <div
+            className="exp-card"
+            style={{ color: `${AppTheme.default.grey}` }}
+          >
+            <p className="heading" style={{ color: `${currentTheme.heading}` }}>
+              {companyName}
+            </p>
             <ul>
               <li>
-                <span className="bold">Role:</span>
+                <span>Role:</span>
                 {role}
               </li>
               <li>
-                <span className="bold">Technologies:</span>
+                <span>Technologies:</span>
                 {technologies}
               </li>
               <li>
-                <span className="bold">Duration:</span>
+                <span>Duration:</span>
                 {duration}
               </li>
               <li>
-                <span className="bold">Description:</span>
+                <span>Description:</span>
                 <ul>
                   {description.map((descr) => {
                     const { point } = descr;

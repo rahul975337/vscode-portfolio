@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 body {
   margin: 0;
   padding: 0;
+  transition: ease-in 0.2s;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -20,4 +22,5 @@ code {
   --grey: #6a737d;
   --white-text: #f3f3f3;
   --text-grey: #abb2bf;
+  --blue-heading: rgb(66, 165, 245);
 }

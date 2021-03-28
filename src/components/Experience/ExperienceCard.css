@@ -3,14 +3,13 @@
 .exp-card {
   padding: 20px;
   font-family: "Ubuntu Mono", monospace;
-  color: var(--text-grey);
   font-size: 18px;
 }
 li {
   padding: 3px;
 }
 
-.bold {
+.exp-card span {
   font-weight: 400;
-  color: white;
+  color: var(--white-text);
 }
