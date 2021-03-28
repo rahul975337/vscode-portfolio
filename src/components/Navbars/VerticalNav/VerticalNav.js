@@ -23,7 +23,7 @@ function VerticalNav() {
 
   const theme = useContext(ThemeContext)[0];
   const currentTheme = AppTheme[theme];
-  const [themeMode, setThemeMode] = useContext(ThemeContext);
+  const [setThemeMode] = useContext(ThemeContext);
 
   const useStyles = makeStyles((theme) => ({
     dropdown: {

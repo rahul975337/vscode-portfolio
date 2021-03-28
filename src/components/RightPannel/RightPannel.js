@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { Route, Switch } from "react-router-dom";
 import ThemeContext from "../../ThemeContext";
 import AppTheme from "../../Themes";
@@ -11,7 +11,6 @@ import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
 
 function RightPannel() {
-  const themeHook = useState("default");
   const theme = useContext(ThemeContext)[0];
   const currentTheme = AppTheme[theme];
   return (
