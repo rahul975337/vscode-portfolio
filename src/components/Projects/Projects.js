@@ -1,7 +1,7 @@
 import React from "react";
-import "./Projects.css";
-import projectData from "./projectData";
 import { VscCode } from "react-icons/vsc";
+import projectData from "./../../Data/projectData";
+import "./Projects.css";
 
 function Projects() {
   return (

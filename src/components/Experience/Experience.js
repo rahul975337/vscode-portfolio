@@ -5,7 +5,6 @@ function Experience() {
   return (
     <div className="experience">
       <ExperienceCard />
-      
     </div>
   );
 }

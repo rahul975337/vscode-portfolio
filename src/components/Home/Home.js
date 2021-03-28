@@ -1,8 +1,7 @@
-import { Avatar } from "@material-ui/core";
 import React from "react";
+import { VscGithub } from "react-icons/vsc";
 import Typewriter from "typewriter-effect";
 import "./Home.css";
-import { VscGithub } from "react-icons/vsc";
 
 function Home() {
   return (

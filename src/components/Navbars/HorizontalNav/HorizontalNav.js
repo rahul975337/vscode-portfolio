@@ -1,21 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "./HorizontalNav.css";
-import { Close } from "@material-ui/icons";
-import NavTab from "./NavTab";
 import {
   VscEllipsis,
   VscGitCompare,
   VscSplitHorizontal,
 } from "react-icons/vsc";
+import "./HorizontalNav.css";
+import NavTab from "./NavTab";
+import tabData from "./../../../Data/tabData";
+
 function HorizontalNav() {
   return (
     <nav className="hell">
-      <NavTab tab_name="home.js" routeUrl="/" />
-      <NavTab tab_name="projects.css" routeUrl="/projects" />
-      <NavTab tab_name="skills.sql" routeUrl="/skills" />
-      <NavTab tab_name="experience.sql" routeUrl="/experience" />
-      <NavTab tab_name="about.md" routeUrl="/about" />
+      {tabData.map((tab) => {
+        const { tab_name, routeUrl } = tab;
+        return <NavTab tab_name={tab_name} routeUrl={routeUrl} />;
+      })}
+
       <VscGitCompare className="compare-icon" />
       <VscSplitHorizontal className="split-screen-icon" />
       <VscEllipsis className="dot-icon" />

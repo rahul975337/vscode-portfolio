@@ -1,8 +1,8 @@
 import { Close } from "@material-ui/icons";
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
-import "./NavTab.css";
 import { FaJsSquare } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
+import "./NavTab.css";
 function NavTab({ routeUrl, tab_name }) {
   return (
     // <div className="tab">

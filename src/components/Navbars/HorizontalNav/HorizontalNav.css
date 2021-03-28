@@ -6,24 +6,24 @@ li {
   list-style-type: none;
 }
 .compare-icon {
-  color: var(--grey);
-  transform: scale(1.3);
+  color: var(--white-text);
+  transform: scale(1.2);
   margin: 10px;
   position: absolute;
   right: 80px;
 }
 
 .split-screen-icon {
-  color: var(--grey);
-  transform: scale(1.3);
+  color: var(--white-text);
+  transform: scale(1.2);
   margin: 10px;
   position: absolute;
   right: 50px;
 }
 
 .dot-icon {
-  color: var(--grey);
-  transform: scale(1.3);
+  color: var(--white-text);
+  transform: scale(1.2);
   margin: 10px;
   position: absolute;
   right: 20px;
