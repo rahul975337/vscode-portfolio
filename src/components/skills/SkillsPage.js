@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
+import skillsData from "../../Data/skillsData";
 import ThemeContext from "../../ThemeContext";
 import AppTheme from "../../Themes";
-import skillsData from "./../../Data/skillsData";
 import "./Skills.css";
 
-function Skills() {
+function SkillsPage() {
   const theme = useContext(ThemeContext)[0];
   const currentTheme = AppTheme[theme];
 
@@ -43,4 +43,4 @@ function Skills() {
   );
 }
 
-export default Skills;
+export default SkillsPage;
