@@ -4,10 +4,9 @@ import ThemeContext from "../../ThemeContext";
 import AppTheme from "../../Themes";
 import "./Skills.css";
 
-function SkillsPage() {
+function Skills() {
   const theme = useContext(ThemeContext)[0];
   const currentTheme = AppTheme[theme];
-
   return (
     <>
       {skillsData.map((skill) => {
@@ -43,4 +42,4 @@ function SkillsPage() {
   );
 }
 
-export default SkillsPage;
+export default Skills;

@@ -8,6 +8,7 @@ import Experience from "../Experience/Experience";
 import Home from "../Home/Home";
 import HorizontalNav from "../Navbars/HorizontalNav/HorizontalNav";
 import Projects from "../Projects/Projects";
+import Skills from "../skills/Skills";
 function RightPannel() {
   const theme = useContext(ThemeContext)[0];
   const currentTheme = AppTheme[theme];
@@ -34,7 +35,7 @@ function RightPannel() {
             <Projects />
           </Route>
           <Route exact path="/skills">
-            {/* <SkillsPage /> */}
+            <Skills />
           </Route>
           <Route exact path="/experience">
             <Experience />
