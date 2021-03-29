@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { ClickAwayListener, makeStyles, Portal } from "@material-ui/core";
 import React, { useContext } from "react";
 import { IoPersonCircleOutline } from "react-icons/io5";
@@ -23,7 +24,7 @@ function VerticalNav() {
 
   const theme = useContext(ThemeContext)[0];
   const currentTheme = AppTheme[theme];
-  const [setThemeMode] = useContext(ThemeContext);
+  const [themeMode, setThemeMode] = useContext(ThemeContext);
 
   const useStyles = makeStyles((theme) => ({
     dropdown: {
@@ -32,13 +33,17 @@ function VerticalNav() {
       height: "50vh",
       bottom: "3.2vh",
       left: "3.5vw",
-
       border: `1px ridge ${currentTheme.midBackground}`,
       borderRadius: 3,
       padding: theme.spacing(1),
       backgroundColor: `${currentTheme.darkBackground}`,
       color: "var(--white-text)",
       fontWeight: "normal",
+      // eslint-disable-next-line no-useless-computed-key
+      ["@media (max-width:768px)"]: {
+        width: "40vw",
+        left: "6vw",
+      },
     },
   }));
   const classes = useStyles();

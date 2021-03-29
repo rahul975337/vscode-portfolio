@@ -35,9 +35,9 @@ function HorizontalNav() {
         );
       })}
       <ReactTooltip id="close" place="right" />
-      <VscGitCompare className="compare-icon" />
-      <VscSplitHorizontal className="split-screen-icon" />
-      <VscEllipsis className="dot-icon" />
+      <VscGitCompare className="compare-icon hor-nav-icons" />
+      <VscSplitHorizontal className="split-screen-icon hor-nav-icons" />
+      <VscEllipsis className="dot-icon hor-nav-icons" />
     </nav>
   );
 }
