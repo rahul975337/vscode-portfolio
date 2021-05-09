@@ -1,0 +1,31 @@
+.top_panel {
+  height: 25px;
+  display: flex;
+  color: var(--white-text);
+  align-items: center;
+}
+
+.vslogo {
+  transform: scale(0.4);
+}
+
+.top_options {
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.top_heading {
+  font-size: 13px;
+  margin-left: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+  .top_heading,
+  .top_options {
+    visibility: hidden;
+  }
+  .vslogo {
+    transform: scale(4.7);
+    margin-left: 20px;
+  }
+}

@@ -7,6 +7,7 @@
 
   transform: scale(1.5);
   letter-spacing: 4px;
+  
 }
 
 .pic {
@@ -18,6 +19,7 @@
 
 .button {
   border: none;
+  /* height: 60px; */
   color: var(--white-text);
   padding: 2px 8px;
   text-align: center;
@@ -34,4 +36,14 @@
 
 .button p {
   margin-left: 5px;
+  overflow: visible;
+}
+
+@media screen and (max-width: 768px) {
+  .pic {
+    margin-left: 30vw;
+  }
+  .button {
+    visibility: hidden;
+  }
 }

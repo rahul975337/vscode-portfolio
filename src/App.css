@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -19,99 +20,16 @@ body {
 
   bottom: 0;
 }
+@media screen and (max-width: 768px) {
+ *{
+  overflow: hidden;
+}
+}
 
 /* Other files */
 
 /* TopPanel.js */
-.top_panel {
-  height: 25px;
-  display: flex;
-  color: var(--white-text);
-  align-items: center;
-}
-
-.vslogo {
-  transform: scale(0.4);
-}
-
-.top_options {
-  font-size: 12px;
-  margin-right: 20px;
-}
-
-.top_heading {
-  font-size: 13px;
-  margin-left: 10rem;
-}
 
 /* RightPanel.js */
 
-.right_panel {
-  position: absolute;
-  left: 45px;
-  right: 0;
-  top: 25px;
-  bottom: 0;
-}
-
-.right_nav {
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 35px;
-}
-.pages {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 35px;
-  bottom: 0;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  transition: ease-in 0.3s;
-}
-
-@media screen and (max-width: 768px) {
-  .top_heading,
-  .hor-nav-icons {
-    visibility: hidden;
-  }
-}
-
 /* Footer.js */
-
-.footer {
-  height: 20px;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.master_link {
-  cursor: pointer;
-}
-
-.icon-branch {
-  color: var(--white-text);
-  font-size: 13px;
-  padding-left: 13px;
-}
-
-.master {
-  color: var(--white-text);
-  padding-left: 3px;
-  position: absolute;
-  top: 1px;
-  font-weight: normal;
-  font-size: 12px;
-}
-
-.icon-smile {
-  color: var(--white-text);
-  font-size: 13px;
-  padding-right: 13px;
-}

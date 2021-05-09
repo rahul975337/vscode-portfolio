@@ -3,6 +3,7 @@ import { FaSmile } from "react-icons/fa";
 import { VscSourceControl } from "react-icons/vsc";
 import ThemeContext from "../../ThemeContext";
 import AppTheme from "../../Themes";
+import './Footer.css';
 
 function Footer() {
   const theme = useContext(ThemeContext)[0];

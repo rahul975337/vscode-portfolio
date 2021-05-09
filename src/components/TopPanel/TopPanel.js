@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import ThemeContext from "../../ThemeContext";
 import AppTheme from "../../Themes";
 import vscode from "./../../images/vscode.png";
+import "./TopPanel.css";
 const options = ["File", "Edit", "Selection", "View", "Go", "Run", "Terminal"];
 function TopPanel() {
   const theme = useContext(ThemeContext)[0];

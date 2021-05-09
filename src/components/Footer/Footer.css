@@ -1,0 +1,36 @@
+
+.footer {
+  height: 20px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.master_link {
+  cursor: pointer;
+}
+
+.icon-branch {
+  color: var(--white-text);
+  font-size: 13px;
+  padding-left: 13px;
+}
+
+.master {
+  color: var(--white-text);
+  padding-left: 3px;
+  position: absolute;
+  top: 1px;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.icon-smile {
+  color: var(--white-text);
+  font-size: 13px;
+  padding-right: 13px;
+}
