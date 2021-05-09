@@ -61,3 +61,10 @@ hr {
 .theme_circle:hover {
   transform: scale(1.3);
 }
+
+@media screen and (max-width: 768px) {
+  .vertical-nav {
+    height: 100%;
+    overflow: hidden;
+  }
+}

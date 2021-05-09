@@ -24,3 +24,11 @@ li {
   position: absolute;
   right: 20px;
 }
+
+@media screen and (max-width: 768px) {
+  .split-screen-icon,
+  .compare-icon,
+  .dot-icon {
+    visibility: hidden;
+  }
+}

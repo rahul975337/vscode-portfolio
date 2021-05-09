@@ -9,6 +9,7 @@ import Home from "../Home/Home";
 import HorizontalNav from "../Navbars/HorizontalNav/HorizontalNav";
 import Projects from "../Projects/Projects";
 import Skills from "../skills/Skills";
+import "./RightPanel.css";
 function RightPannel() {
   const theme = useContext(ThemeContext)[0];
   const currentTheme = AppTheme[theme];

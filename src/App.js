@@ -12,16 +12,16 @@ function App() {
   return (
     <ThemeContext.Provider value={themeHook}>
       <Router>
-
-        <TopPanel />
-
-        <div className="mid_pannel">
-          <div className="left_panel">
-            <VerticalNav />
+        <div className="App">
+          <TopPanel />
+          <div className="mid_pannel">
+            <div className="left_panel">
+              <VerticalNav />
+            </div>
+            <RightPannel />
           </div>
-          <RightPannel />
+          <Footer />
         </div>
-        <Footer />
       </Router>
     </ThemeContext.Provider>
   );

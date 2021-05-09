@@ -13,6 +13,7 @@ function NavTab({ routeUrl, tab_name, logo, closeUrl }) {
     <NavLink
       exact
       to={routeUrl}
+      className="navtab"
       activeStyle={{
         backgroundColor: `${currentTheme.midBackground}`,
         borderTop: `1px solid  ${currentTheme.highlight}`,

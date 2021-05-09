@@ -23,15 +23,18 @@ function Home() {
             delay: 50,
           }}
         />
-        <button
+        <a
           className="button"
           style={{
             backgroundColor: `${currentTheme.darkBackground}`,
           }}
+          href="https://github.com/rahul975337"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <VscGithub />
           <p>rahul975337</p>
-        </button>
+        </a>
       </div>
     </div>
   );
