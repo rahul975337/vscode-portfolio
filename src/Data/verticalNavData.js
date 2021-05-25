@@ -9,7 +9,7 @@ const linkIcons = [
     icon: <VscExtensions className="icon" />,
   },
   {
-    url: "mailto:tilwani@gmail.com",
+    url: "mailto:tilwani03@gmail.com",
     dataTip: "Mail me",
     dataFor: "mail",
     icon: <SiGmail className="icon" />,
