@@ -6,6 +6,6 @@ const strings = [
   "Problem Solver",
 ];
 const picUrl =
-  "https://media-exp1.licdn.com/dms/image/C4D03AQFiUKa8nwzryQ/profile-displayphoto-shrink_400_400/0/1599043215731?e=1622073600&v=beta&t=0PFOnzs2q-ID8x35JDn_Dipqf9Gxh3Pj-kOxxhOCxDg";
+  "https://avatars.githubusercontent.com/u/55583515?v=4";
 
 export { strings, picUrl };
